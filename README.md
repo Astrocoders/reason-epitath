@@ -17,6 +17,7 @@ npm start
 module StateConfig = {
   type state = string;
 };
+/* ReContainers is from https://github.com/Astrocoders/recontainers/ */
 module State = ReContainers.WithState.Make(StateConfig);
 
 let component = ReasonReact.statelessComponent("App");
