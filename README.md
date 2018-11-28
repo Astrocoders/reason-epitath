@@ -61,3 +61,16 @@ let make = _children => {
   },
 };
 ```
+
+# Next Steps
+
+Maybe change
+```reason
+let%Epitath passwordState = children =>
+  <State initialState=""> ...children </State>;
+```
+
+to 
+```reason
+let%Epitath passwordState = <State initialState="" />;
+```
